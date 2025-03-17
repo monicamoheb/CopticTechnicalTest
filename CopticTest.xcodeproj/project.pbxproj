@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5923785A2D886A520077A91A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592378592D886A520077A91A /* AppDelegate.swift */; };
+		5923785C2D886A520077A91A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5923785B2D886A520077A91A /* SceneDelegate.swift */; };
+		5923785E2D886A520077A91A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5923785D2D886A520077A91A /* ViewController.swift */; };
+		592378612D886A520077A91A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 592378602D886A520077A91A /* Base */; };
+		592378642D886A520077A91A /* CopticTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 592378622D886A520077A91A /* CopticTest.xcdatamodeld */; };
+		592378662D886A540077A91A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 592378652D886A540077A91A /* Assets.xcassets */; };
+		592378692D886A540077A91A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 592378682D886A540077A91A /* Base */; };
+		592378742D886A550077A91A /* CopticTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592378732D886A550077A91A /* CopticTestTests.swift */; };
+		5923787E2D886A550077A91A /* CopticTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5923787D2D886A550077A91A /* CopticTestUITests.swift */; };
+		592378802D886A550077A91A /* CopticTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5923787F2D886A550077A91A /* CopticTestUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		592378702D886A550077A91A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5923784E2D886A520077A91A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 592378552D886A520077A91A;
+			remoteInfo = CopticTest;
+		};
+		5923787A2D886A550077A91A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5923784E2D886A520077A91A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 592378552D886A520077A91A;
+			remoteInfo = CopticTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		592378562D886A520077A91A /* CopticTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopticTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		592378592D886A520077A91A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5923785B2D886A520077A91A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5923785D2D886A520077A91A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		592378602D886A520077A91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		592378632D886A520077A91A /* CopticTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CopticTest.xcdatamodel; sourceTree = "<group>"; };
+		592378652D886A540077A91A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		592378682D886A540077A91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5923786A2D886A540077A91A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5923786F2D886A550077A91A /* CopticTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopticTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		592378732D886A550077A91A /* CopticTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopticTestTests.swift; sourceTree = "<group>"; };
+		592378792D886A550077A91A /* CopticTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopticTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5923787D2D886A550077A91A /* CopticTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopticTestUITests.swift; sourceTree = "<group>"; };
+		5923787F2D886A550077A91A /* CopticTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopticTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		592378532D886A520077A91A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5923786C2D886A550077A91A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		592378762D886A550077A91A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5923784D2D886A520077A91A = {
+			isa = PBXGroup;
+			children = (
+				592378582D886A520077A91A /* CopticTest */,
+				592378722D886A550077A91A /* CopticTestTests */,
+				5923787C2D886A550077A91A /* CopticTestUITests */,
+				592378572D886A520077A91A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		592378572D886A520077A91A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				592378562D886A520077A91A /* CopticTest.app */,
+				5923786F2D886A550077A91A /* CopticTestTests.xctest */,
+				592378792D886A550077A91A /* CopticTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		592378582D886A520077A91A /* CopticTest */ = {
+			isa = PBXGroup;
+			children = (
+				592378592D886A520077A91A /* AppDelegate.swift */,
+				5923785B2D886A520077A91A /* SceneDelegate.swift */,
+				5923785D2D886A520077A91A /* ViewController.swift */,
+				5923785F2D886A520077A91A /* Main.storyboard */,
+				592378652D886A540077A91A /* Assets.xcassets */,
+				592378672D886A540077A91A /* LaunchScreen.storyboard */,
+				5923786A2D886A540077A91A /* Info.plist */,
+				592378622D886A520077A91A /* CopticTest.xcdatamodeld */,
+			);
+			path = CopticTest;
+			sourceTree = "<group>";
+		};
+		592378722D886A550077A91A /* CopticTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				592378732D886A550077A91A /* CopticTestTests.swift */,
+			);
+			path = CopticTestTests;
+			sourceTree = "<group>";
+		};
+		5923787C2D886A550077A91A /* CopticTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5923787D2D886A550077A91A /* CopticTestUITests.swift */,
+				5923787F2D886A550077A91A /* CopticTestUITestsLaunchTests.swift */,
+			);
+			path = CopticTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		592378552D886A520077A91A /* CopticTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 592378832D886A550077A91A /* Build configuration list for PBXNativeTarget "CopticTest" */;
+			buildPhases = (
+				592378522D886A520077A91A /* Sources */,
+				592378532D886A520077A91A /* Frameworks */,
+				592378542D886A520077A91A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CopticTest;
+			productName = CopticTest;
+			productReference = 592378562D886A520077A91A /* CopticTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5923786E2D886A550077A91A /* CopticTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 592378862D886A550077A91A /* Build configuration list for PBXNativeTarget "CopticTestTests" */;
+			buildPhases = (
+				5923786B2D886A550077A91A /* Sources */,
+				5923786C2D886A550077A91A /* Frameworks */,
+				5923786D2D886A550077A91A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				592378712D886A550077A91A /* PBXTargetDependency */,
+			);
+			name = CopticTestTests;
+			productName = CopticTestTests;
+			productReference = 5923786F2D886A550077A91A /* CopticTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		592378782D886A550077A91A /* CopticTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 592378892D886A550077A91A /* Build configuration list for PBXNativeTarget "CopticTestUITests" */;
+			buildPhases = (
+				592378752D886A550077A91A /* Sources */,
+				592378762D886A550077A91A /* Frameworks */,
+				592378772D886A550077A91A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5923787B2D886A550077A91A /* PBXTargetDependency */,
+			);
+			name = CopticTestUITests;
+			productName = CopticTestUITests;
+			productReference = 592378792D886A550077A91A /* CopticTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5923784E2D886A520077A91A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					592378552D886A520077A91A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					5923786E2D886A550077A91A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 592378552D886A520077A91A;
+					};
+					592378782D886A550077A91A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 592378552D886A520077A91A;
+					};
+				};
+			};
+			buildConfigurationList = 592378512D886A520077A91A /* Build configuration list for PBXProject "CopticTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5923784D2D886A520077A91A;
+			productRefGroup = 592378572D886A520077A91A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				592378552D886A520077A91A /* CopticTest */,
+				5923786E2D886A550077A91A /* CopticTestTests */,
+				592378782D886A550077A91A /* CopticTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		592378542D886A520077A91A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				592378662D886A540077A91A /* Assets.xcassets in Resources */,
+				592378692D886A540077A91A /* Base in Resources */,
+				592378612D886A520077A91A /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5923786D2D886A550077A91A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		592378772D886A550077A91A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		592378522D886A520077A91A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5923785E2D886A520077A91A /* ViewController.swift in Sources */,
+				592378642D886A520077A91A /* CopticTest.xcdatamodeld in Sources */,
+				5923785A2D886A520077A91A /* AppDelegate.swift in Sources */,
+				5923785C2D886A520077A91A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5923786B2D886A550077A91A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				592378742D886A550077A91A /* CopticTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		592378752D886A550077A91A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				592378802D886A550077A91A /* CopticTestUITestsLaunchTests.swift in Sources */,
+				5923787E2D886A550077A91A /* CopticTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		592378712D886A550077A91A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 592378552D886A520077A91A /* CopticTest */;
+			targetProxy = 592378702D886A550077A91A /* PBXContainerItemProxy */;
+		};
+		5923787B2D886A550077A91A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 592378552D886A520077A91A /* CopticTest */;
+			targetProxy = 5923787A2D886A550077A91A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5923785F2D886A520077A91A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				592378602D886A520077A91A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		592378672D886A540077A91A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				592378682D886A540077A91A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		592378812D886A550077A91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		592378822D886A550077A91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		592378842D886A550077A91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CopticTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.CopticTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		592378852D886A550077A91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CopticTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.CopticTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		592378872D886A550077A91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.CopticTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CopticTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CopticTest";
+			};
+			name = Debug;
+		};
+		592378882D886A550077A91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.CopticTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CopticTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CopticTest";
+			};
+			name = Release;
+		};
+		5923788A2D886A550077A91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.CopticTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CopticTest;
+			};
+			name = Debug;
+		};
+		5923788B2D886A550077A91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ITI.CopticTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CopticTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		592378512D886A520077A91A /* Build configuration list for PBXProject "CopticTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				592378812D886A550077A91A /* Debug */,
+				592378822D886A550077A91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		592378832D886A550077A91A /* Build configuration list for PBXNativeTarget "CopticTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				592378842D886A550077A91A /* Debug */,
+				592378852D886A550077A91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		592378862D886A550077A91A /* Build configuration list for PBXNativeTarget "CopticTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				592378872D886A550077A91A /* Debug */,
+				592378882D886A550077A91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		592378892D886A550077A91A /* Build configuration list for PBXNativeTarget "CopticTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5923788A2D886A550077A91A /* Debug */,
+				5923788B2D886A550077A91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		592378622D886A520077A91A /* CopticTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				592378632D886A520077A91A /* CopticTest.xcdatamodel */,
+			);
+			currentVersion = 592378632D886A520077A91A /* CopticTest.xcdatamodel */;
+			path = CopticTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5923784E2D886A520077A91A /* Project object */;
+}
