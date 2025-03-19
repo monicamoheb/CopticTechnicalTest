@@ -2,22 +2,51 @@
 //  AppDelegate.swift
 //  CopticTest
 //
-//  Created by kevin marco on 17/03/2025.
+//  Created on 17/03/2025.
 //
 
 import UIKit
 import CoreData
+import FirebaseCore
+import FirebaseAuth
+import GoogleSignIn
+import FacebookCore
+import FBSDKCoreKit
+import FBSDKLoginKit 
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
+    
+    func application(
+           _ application: UIApplication,
+           didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+       ) -> Bool {
+           ApplicationDelegate.shared.application(
+               application,
+               didFinishLaunchingWithOptions: launchOptions
+           )
+           
+           FirebaseApp.configure()
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+           return true
+       }
+    
+   
+    func application(_ app: UIApplication,
+                     open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+        
+        ApplicationDelegate.shared.application(
+            app,
+            open: url,
+            sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+            annotation: options[UIApplication.OpenURLOptionsKey.annotation]
+        )
+      return GIDSignIn.sharedInstance.handle(url)
     }
-
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

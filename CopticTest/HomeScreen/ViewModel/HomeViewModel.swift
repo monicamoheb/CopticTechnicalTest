@@ -2,61 +2,44 @@
 //  HomeViewModel.swift
 //  YjahzApp
 //
-//  Created by Mac on 18/12/2023.
+//  
 //
 
 import Foundation
 
 class HomeViewModel{
+    
+    var searchResult : [RepoResponse] = []
     var bindResultToViewController : (()->()) = {}
-    var category : [CategoryResponse] = []{
-        didSet{
-            bindResultToViewController()
-        }
-    }
-    var popular : [ProductResponse] = []{
-        didSet{
-            bindResultToViewController()
-        }
-    }
-    var trending : [ProductResponse]!{
+    var result : [RepoResponse] = []{
         didSet{
             bindResultToViewController()
         }
     }
     
-    //urls 1-> https://yogahez.mountasher.online/api/popular-sellers?lat=29.1931&lng=30.6421&filter=1
-    //2->https://yogahez.mountasher.online/api/trending-sellers?lat=29.1931&lng=30.6421&filter=1
-    //3->https://yogahez.mountasher.online/api/base-categories
+    func getItems(){
+        let url = "https://api.github.com/repositories"
+        NetworkManager().loadData(url : url) { [weak self] (result : [RepoResponse]?,error) in
+            self?.result = result ?? []
+            
+        }
+    }
     
-    func getHomeData()  {
+    //https://api.github.com/search/repositories?q=\(repoName)
+    //https://api.github.com/search/repositories?q=<repository_name>+in:name+is:public
+    func searchByName (repoName :String){
+        let url = "https://api.github.com/search/repositories?q=\(repoName)+in:name+is:public"
+        NetworkManager().loadData(url : url) { [weak self] (result : SearchResponse?,error) in
+            self?.result = result?.items ?? []
+        }
+    }
+    
+    func searchByNameLocally(repoName: String){
         
-        getPopularItems()
-        getTrendingItems()
-        getCategory()
+        searchResult = result.filter { repo in
+            guard let repofullName = repo.fullName else {return
+                false}
+            return repofullName.lowercased().contains(repoName.lowercased()) }
+        
     }
-    
-    func getCategory(){
-        //        let param = ["lat":"","lng":""]
-        let url = "https://yogahez.mountasher.online/api/base-categories"
-        NetworkManager().loadData(url: url) { [weak self] (result : MyResponse<CategoryResponse>?, error) in
-            self?.category = result?.data ?? []
-        }
-    }
-    
-    func getPopularItems(){
-        //        let param = ["lat":"","lng":""]
-        let url = "https://yogahez.mountasher.online/api/popular-sellers?lat=29.1931&lng=30.6421&filter=1"
-        NetworkManager().loadData(url: url) { [weak self] (result : MyResponse<ProductResponse>?, error) in
-            self?.popular = result?.data ?? []
-        }
-    }
-    func getTrendingItems(){
-        //        let param = ["lat":"","lng":""]
-        let url = "https://yogahez.mountasher.online/api/trending-sellers?lat=29.1931&lng=30.6421&filter=1"
-        NetworkManager().loadData(url: url) { [weak self] (result : MyResponse<ProductResponse>?, error) in
-            self?.trending = result?.data ?? []
-        }
-    }
-
 }

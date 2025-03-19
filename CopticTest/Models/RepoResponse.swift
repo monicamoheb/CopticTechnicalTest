@@ -2,7 +2,7 @@
 //  MyResponse.swift
 //  CopticTest
 //
-//  Created by kevin marco on 18/03/2025.
+//  Created on 18/03/2025.
 //
 
 import Foundation
@@ -26,6 +26,12 @@ struct RepoResponse: Codable {
         case fullName = "full_name"
         case url
     }
+}
+
+public struct SearchResponse : Codable{
+    var total_count: Int
+    var incomplete_results: Bool
+    var items: [RepoResponse]
 }
 
 

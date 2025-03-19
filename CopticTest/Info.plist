@@ -2,6 +2,50 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.952236551503-fu67j4apl3moktolskr4vdaedlapl1h5</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.952236551503-fu67j4apl3moktolskr4vdaedlapl1h5</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.952236551503-fu67j4apl3moktolskr4vdaedlapl1h5</string>
+			</array>
+		</dict>
+        <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>fb675089768302487</string>
+        </array>
+        </dict>
+      </array>
+      <key>FacebookAppID</key>
+      <string>675089768302487</string>
+      <key>FacebookClientToken</key>
+      <string>42f359614fa2b072b8c07d139d23233f</string>
+      <key>FacebookDisplayName</key>
+      <string>CopticTest</string>
+      <key>LSApplicationQueriesSchemes</key>
+      <array>
+        <string>fbapi</string>
+        <string>fb-messenger-share-api</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
