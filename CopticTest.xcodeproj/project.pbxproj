@@ -23,7 +23,6 @@
 		599899F82D8B5665000A92D7 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 599899F72D8B5665000A92D7 /* FacebookCore */; };
 		599899FA2D8B5665000A92D7 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 599899F92D8B5665000A92D7 /* FacebookLogin */; };
 		59A61C3D2D8A0EA10076AE16 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A61C3C2D8A0EA10076AE16 /* SignUpViewController.swift */; };
-		59A61C3F2D8A0EB50076AE16 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A61C3E2D8A0EB50076AE16 /* SignupViewModel.swift */; };
 		59CA455D2D89FC8D000ADBA2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 59CA455C2D89FC8D000ADBA2 /* FirebaseAnalytics */; };
 		59CA455F2D89FC8D000ADBA2 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 59CA455E2D89FC8D000ADBA2 /* FirebaseAnalyticsOnDeviceConversion */; };
 		59CA45612D89FC8D000ADBA2 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 59CA45602D89FC8D000ADBA2 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -48,7 +47,6 @@
 		59CA45872D89FC8D000ADBA2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 59CA45862D89FC8D000ADBA2 /* FirebaseStorage */; };
 		59CA45892D89FC8D000ADBA2 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 59CA45882D89FC8D000ADBA2 /* FirebaseStorageCombine-Community */; };
 		59CA458B2D89FC8D000ADBA2 /* FirebaseVertexAI in Frameworks */ = {isa = PBXBuildFile; productRef = 59CA458A2D89FC8D000ADBA2 /* FirebaseVertexAI */; };
-		59DA32F32D8AC96200BAA93B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DA32F22D8AC96200BAA93B /* LoginViewModel.swift */; };
 		59DA32F52D8AC97700BAA93B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DA32F42D8AC97700BAA93B /* LoginViewController.swift */; };
 		59DA32F72D8ACA3200BAA93B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DA32F62D8ACA3200BAA93B /* HomeViewController.swift */; };
 		59DA32F92D8ACA3A00BAA93B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DA32F82D8ACA3A00BAA93B /* HomeViewModel.swift */; };
@@ -106,8 +104,6 @@
 		599899E42D8B2E9C000A92D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		599899E82D8B4C78000A92D7 /* CopticTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CopticTest.entitlements; sourceTree = "<group>"; };
 		59A61C3C2D8A0EA10076AE16 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		59A61C3E2D8A0EB50076AE16 /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
-		59DA32F22D8AC96200BAA93B /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		59DA32F42D8AC97700BAA93B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		59DA32F62D8ACA3200BAA93B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		59DA32F82D8ACA3A00BAA93B /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -230,7 +226,6 @@
 		592378BF2D89CF770077A91A /* SignIn Screen */ = {
 			isa = PBXGroup;
 			children = (
-				592378C72D89CFF50077A91A /* ViewModel */,
 				592378C62D89CFED0077A91A /* View */,
 			);
 			path = "SignIn Screen";
@@ -239,7 +234,6 @@
 		592378C02D89CF9E0077A91A /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
-				592378C52D89CFE10077A91A /* ViewModel */,
 				592378C42D89CFD80077A91A /* View */,
 			);
 			path = LoginScreen;
@@ -278,28 +272,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		592378C52D89CFE10077A91A /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				59DA32F22D8AC96200BAA93B /* LoginViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		592378C62D89CFED0077A91A /* View */ = {
 			isa = PBXGroup;
 			children = (
 				59A61C3C2D8A0EA10076AE16 /* SignUpViewController.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		592378C72D89CFF50077A91A /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				59A61C3E2D8A0EB50076AE16 /* SignupViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		592378C82D89D0360077A91A /* Models */ = {
@@ -498,7 +476,6 @@
 			files = (
 				5923785E2D886A520077A91A /* ViewController.swift in Sources */,
 				59A61C3D2D8A0EA10076AE16 /* SignUpViewController.swift in Sources */,
-				59A61C3F2D8A0EB50076AE16 /* SignupViewModel.swift in Sources */,
 				592378642D886A520077A91A /* CopticTest.xcdatamodeld in Sources */,
 				592378CE2D89D12F0077A91A /* RepoResponse.swift in Sources */,
 				592378CC2D89D0830077A91A /* NetworkManager.swift in Sources */,
@@ -507,7 +484,6 @@
 				59DA32F72D8ACA3200BAA93B /* HomeViewController.swift in Sources */,
 				5923785C2D886A520077A91A /* SceneDelegate.swift in Sources */,
 				59DA32F52D8AC97700BAA93B /* LoginViewController.swift in Sources */,
-				59DA32F32D8AC96200BAA93B /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -139,7 +139,6 @@ class SignUpViewController: UIViewController {
           let credential = GoogleAuthProvider.credential(withIDToken: idToken,
                                                          accessToken: user.accessToken.tokenString)
 
-          // ...
             Auth.auth().signIn(with: credential) { [weak self]result, error in
                 
                 if(result != nil){

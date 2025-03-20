@@ -13,8 +13,6 @@ import FacebookLogin
 
 class LoginViewController: UIViewController {
     
-    
-    
     @IBOutlet weak var emailTF: UITextField!
     
     @IBOutlet weak var passwordTF: UITextField!
@@ -29,14 +27,11 @@ class LoginViewController: UIViewController {
     @IBAction func googleLoginClick(_ sender: Any) {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
 
-        // Create Google Sign In configuration object.
         let config = GIDConfiguration(clientID: clientID)
         GIDSignIn.sharedInstance.configuration = config
-
-        // Start the sign in flow!
+        
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
           guard error == nil else {
-            // ...
               
               return
           }
@@ -44,14 +39,12 @@ class LoginViewController: UIViewController {
           guard let user = result?.user,
             let idToken = user.idToken?.tokenString
           else {
-            // ...
               return
           }
 
           let credential = GoogleAuthProvider.credential(withIDToken: idToken,
                                                          accessToken: user.accessToken.tokenString)
 
-          // ...
             Auth.auth().signIn(with: credential) { [weak self]result, error in
                 
                 if(result != nil){
@@ -71,6 +64,7 @@ class LoginViewController: UIViewController {
             }
                 
         }
+        
     }
     
     @IBAction func facebookLoginClick(_ sender: Any) {
@@ -93,16 +87,14 @@ class LoginViewController: UIViewController {
                 let email = Profile.current?.email
                 let name = Profile.current?.name
                 
-                
                 UserDefaults.standard.set(name, forKey: "name")
                 
                 let login = self.storyboard?.instantiateViewController(withIdentifier: "home") as! HomeViewController
                 self.navigationController?.pushViewController(login, animated: true)
                 
-                
             }
             
-            }
+        }
         
     }
     
@@ -130,3 +122,4 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(signup, animated: true)
     }
 }
+

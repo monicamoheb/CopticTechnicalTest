@@ -516,16 +516,12 @@
                                 <rect key="frame" x="8" y="176" width="377" height="56"/>
                                 <subviews>
                                     <searchBar contentMode="redraw" placeholder="Search for public github repo" translatesAutoresizingMaskIntoConstraints="NO" id="ZMA-rr-zLV">
-                                        <rect key="frame" x="0.0" y="0.0" width="348.66666666666669" height="56"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="56"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <outlet property="delegate" destination="Wpp-7R-ShC" id="7lR-I7-gM7"/>
                                         </connections>
                                     </searchBar>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rHS-Ra-fOy">
-                                        <rect key="frame" x="356.66666666666669" y="0.99999999999999645" width="20.333333333333314" height="54.333333333333329"/>
-                                        <color key="tintColor" red="0.07451552099" green="0.040039426689999998" blue="0.50181972860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </imageView>
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Tld-E4-8wf">
@@ -562,15 +558,22 @@
                                     <outlet property="delegate" destination="Wpp-7R-ShC" id="0cH-C5-SR3"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="FN4-cN-lDQ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="color" red="0.1039243928" green="0.24256532680000001" blue="0.50181972860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2dp-6e-T1J"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="35t-xy-uvd" firstAttribute="trailing" secondItem="2dp-6e-T1J" secondAttribute="trailing" id="1lS-TC-q8G"/>
                             <constraint firstItem="fmf-9c-cMv" firstAttribute="leading" secondItem="2dp-6e-T1J" secondAttribute="leading" constant="16" id="29l-DD-U49"/>
+                            <constraint firstItem="2dp-6e-T1J" firstAttribute="trailing" secondItem="FN4-cN-lDQ" secondAttribute="trailing" id="8QC-Dj-uag"/>
+                            <constraint firstItem="FN4-cN-lDQ" firstAttribute="top" secondItem="2dp-6e-T1J" secondAttribute="top" id="98H-Rt-ubH"/>
                             <constraint firstItem="KB1-rr-XKV" firstAttribute="leading" secondItem="2dp-6e-T1J" secondAttribute="leading" constant="8" id="Aon-Uq-LdI"/>
                             <constraint firstItem="Tld-E4-8wf" firstAttribute="leading" secondItem="2dp-6e-T1J" secondAttribute="leading" constant="16" id="GCs-fo-qfw"/>
                             <constraint firstItem="35t-xy-uvd" firstAttribute="leading" secondItem="2dp-6e-T1J" secondAttribute="leading" id="NsP-d1-8PH"/>
+                            <constraint firstItem="FN4-cN-lDQ" firstAttribute="leading" secondItem="2dp-6e-T1J" secondAttribute="leading" id="RbY-Ok-6q2"/>
                             <constraint firstItem="KB1-rr-XKV" firstAttribute="top" secondItem="fmf-9c-cMv" secondAttribute="bottom" constant="26.666666666666686" id="TCq-BK-BWf"/>
                             <constraint firstItem="2dp-6e-T1J" firstAttribute="trailing" secondItem="KB1-rr-XKV" secondAttribute="trailing" constant="8" id="Wbm-wc-eef"/>
                             <constraint firstItem="2dp-6e-T1J" firstAttribute="trailing" secondItem="Tld-E4-8wf" secondAttribute="trailing" constant="16" id="bpR-lc-fBD"/>
@@ -578,9 +581,11 @@
                             <constraint firstItem="Tld-E4-8wf" firstAttribute="bottom" secondItem="2dp-6e-T1J" secondAttribute="bottom" id="f0T-zF-yKb"/>
                             <constraint firstItem="fmf-9c-cMv" firstAttribute="top" secondItem="35t-xy-uvd" secondAttribute="bottom" constant="20" id="nOA-eS-26t"/>
                             <constraint firstItem="35t-xy-uvd" firstAttribute="top" secondItem="2dp-6e-T1J" secondAttribute="top" id="ttl-9Q-n6J"/>
+                            <constraint firstItem="2dp-6e-T1J" firstAttribute="bottom" secondItem="FN4-cN-lDQ" secondAttribute="bottom" id="zOd-ij-QY8"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loadingIndicator" destination="FN4-cN-lDQ" id="ylg-Rw-z9x"/>
                         <outlet property="searchBar" destination="ZMA-rr-zLV" id="UGp-h6-7ca"/>
                         <outlet property="tableView" destination="Tld-E4-8wf" id="BnE-Ea-XvE"/>
                         <outlet property="userNameLabel" destination="fmf-9c-cMv" id="JK0-Ed-jsm"/>
@@ -598,7 +603,6 @@
         <image name="Rectangle 23" width="265" height="168"/>
         <image name="darkBlue" width="270" height="148"/>
         <image name="github_sky" width="318" height="159"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <namedColor name="BG_Gray_Color">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

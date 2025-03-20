@@ -13,17 +13,19 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     let userDefaults = UserDefaults.standard
     var isSearch = false
     var result : [RepoResponse] = Array<RepoResponse>()
     var viewModel : HomeViewModel!
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         
-        var name = userDefaults.object(forKey: "name") as? String ?? ""
+        let name = userDefaults.object(forKey: "name") as? String ?? ""
         userNameLabel.text = name.capitalized
     }
     
@@ -40,10 +42,13 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
         viewModel.bindResultToViewController={
             [weak self] in
             DispatchQueue.main.async {
+                self?.loadingIndicator.stopAnimating()
                 self?.result = self?.viewModel.result ?? [RepoResponse]()
                 self?.tableView.reloadData()
             }
         }
+        loadingIndicator.isHidden = false
+        loadingIndicator.startAnimating()
         viewModel.getItems()
     }
     
@@ -79,20 +84,6 @@ class HomeViewController: UIViewController , UITableViewDelegate, UITableViewDat
 
 extension HomeViewController : UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
-//        var repoName = searchText.lowercased()
-//        if (searchText == ""){
-//            viewModel.getItems()
-//        }
-//        viewModel.bindResultToViewController={
-//            [weak self] in
-//            DispatchQueue.main.async {
-//                self?.result = self?.viewModel.result ?? [RepoResponse]()
-//                self?.tableView.reloadData()
-//            }
-//        }
-//        viewModel.searchByName(repoName: repoName)
-        
         
         if (searchText.isEmpty){
              isSearch = false
